@@ -1,0 +1,80 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  padding-top: 50px;
+}
+
+.swiper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #fff;
+}
+
+.swiper-slide {
+  height: 50px;
+  background-color: #aaa;
+}
+
+.swiper-slide:nth-child(odd) {
+  background-color: #333;
+}
+
+.swiper-slide a {
+  color: #fff;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  text-decoration: none;
+}
+
+.swiper-slide a.active::after {
+  .swiper-slide a.active::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+section {
+  background-color: #aaa;
+  height: 500px;
+  padding-top: 100px;
+}
+
+section:nth-child(odd) {
+  background-color: #333;
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+}
+
+footer {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
